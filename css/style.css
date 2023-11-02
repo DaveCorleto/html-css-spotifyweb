@@ -1,0 +1,40 @@
+:root {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body, .main-container, nav {
+    box-sizing: border-box;
+}
+
+.main-container {
+    background-color: red;
+    min-width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    
+}
+
+nav { 
+    width: 250px;
+    height: calc(100vh - 100px);
+    background-color: black;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+
+}
+
+.play-bar {
+    height: 100px;
+    min-width: 100%;
+    display: flex;
+    background-color: rgb(58, 56, 56);
+    z-index: 1000;
+}
+
