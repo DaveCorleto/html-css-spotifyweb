@@ -19,23 +19,74 @@
 
     <div class="main-container">
 
+        <!-- div.nav-xs visibile solo in versione xs  -->
+
+        <div class="nav-xs">
+            <img src="img/logo-small.svg" alt="">
+            <img src="img/home.svg" alt="">
+            <img src="img/search.svg" alt="">
+            <img src="img/libreria.svg" alt="">
+
+            <div class="profile-xs">
+                <img id="downloadsvg" src="img/download.svg" alt="download">
+                <img src="img/profile.svg" alt="profile">
+            </div>
+        </div>
+
+
         <nav>
-            <div class="logo"></div>
-            <div class="home"></div>
-            <div class="playlist">
-                <h5>Playlist</h5>
-                <div class="crea-playlist"></div>
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo spotify">
+            </div>
+
+            <div class="home">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Cerca
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-book-open"></i>
+                        La tua Libreria
+                    </li>
                 </ul>
             </div>
+
+            <div id="playlist">
+                <h5>Playlist</h5>
+                <div class="crea-playlist">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Crea Playlist</span>
+                </div>
+                <ul>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+
+                </ul>
+            </div>
+
+            <div class="utente">
+                <div class="half">
+                    <i class="fa-regular fa-circle-down"></i>
+                    Installa app
+                </div>
+                <div class="profile half">
+                    <img src="img/profile.svg" alt="profile">
+                    John Doe
+                </div>
+
+            </div>
         </nav>
+
 
         <main>
             <div class="top-bar">
