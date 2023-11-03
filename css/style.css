@@ -52,6 +52,8 @@ nav ul li{
     padding-top: 10px;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 3;
 }
 
 nav ul {
@@ -91,7 +93,15 @@ nav ul li i {
     left: 15px;
     height: 60px;
     width: calc(100% - 30px);
+    z-index: 2;
 }
+
+/* Per far "sparire" .utente al restringersi dell'altezza...  */
+
+@media all and (max-height:700px) {
+    .utente {display: none;}
+}
+    
 
 .profile {
     color: white;
@@ -123,9 +133,88 @@ nav ul li i {
     box-sizing: border-box;
     position: relative;  
     display: none;
+    z-index: 2;
 }
 
+/* Sezione .play-bar  */
 
+.play-bar {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-artist {
+    display: flex;
+    max-width: 250px;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    
+
+}
+
+.mini-card, .saves {
+    flex-basis: 20%;
+}
+.song-credits {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mini-card img {
+    max-width: 100%;
+}
+
+.title, .start, .end {
+    color: white;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.brano-nome {
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.saves {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player {
+    display: flex;
+    max-width: 55%;
+    min-width: 35%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-top, .player-bottom {
+    flex-basis: 90%;
+    display: flex;
+    color: white;
+}
+.player-top {
+    justify-content: center;
+    font-size: 22px;
+}
+
+.player-top i {
+    padding: 0.75rem;
+}
+.player-bottom {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play {
+    min-width: 65%;
+    border: 2px solid grey;
+}
 /* VERSIONE XS  */
 
 @media all and (max-width:480px) { 
