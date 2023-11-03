@@ -213,8 +213,36 @@ nav ul li i {
 
 .play {
     min-width: 65%;
-    border: 2px solid grey;
+    height: 4px;
+    background-color: grey;
+    box-sizing: border-box;
+    margin: 0;
 }
+
+.play-prog {
+    max-width: 30%;
+    height: 100%;
+    background-color:  white;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.play-prog i {
+    
+    display: none;
+    position: absolute;
+    color: white;
+    font-size: 10px;     
+}
+
+.player-bottom:hover .play-prog i {
+     display: flex;
+}
+
+
+
 /* VERSIONE XS  */
 
 @media all and (max-width:480px) { 
