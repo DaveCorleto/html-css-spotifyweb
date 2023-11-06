@@ -18,6 +18,7 @@ body, .main-container, nav {
     height: calc(100vh - 100px);
     display: flex;
     
+
 }
 /* Stili della Nav e loro contenuto  */
 
@@ -85,7 +86,6 @@ nav ul li i {
     overflow-y: scroll;
 }
 
-
 #playlist i {
     background-color: grey;
     padding: 5px;
@@ -147,9 +147,9 @@ nav ul li i {
 /* Sezione .play-bar  */
 
 .play-bar {
-    position: relative;
-    z-index: 999;
+    /* position: relative; */
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
 }
@@ -276,6 +276,7 @@ nav ul li i {
     height: 100px;
     background-color: rgba(0, 0, 0, 0.404);
     position: fixed;
+    z-index: 999;
     top:0;
     right: 0;
     display: flex;
@@ -355,6 +356,8 @@ h3 {
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .card {
@@ -423,6 +426,19 @@ h3 {
     display: flex;
 }
 
+h6 {
+    font-size: 13px;
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+h3, h6 {
+    margin-left: 15px;
+}
+
+.rounded {
+    border-radius: 50%;
+}
 
 /* /Versione MD  */
 
