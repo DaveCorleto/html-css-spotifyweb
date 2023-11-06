@@ -39,6 +39,7 @@ nav {
     font-weight: 800;
     font-size: 12px;
     position: relative;
+    overflow: hidden;
 }
 
 .home {
@@ -74,8 +75,14 @@ nav ul li i {
     font-weight: 500;
 }
 
+#playlist {
+    overflow-y: scroll;
+    max-height: 55%;
+}
+
 .crea-playlist {
     padding-bottom: 20px;
+    overflow-y: scroll;
 }
 
 
@@ -337,7 +344,9 @@ h3 {
 
 .gallery {
     padding: 1rem;
-    padding-top: 165px;  
+    padding-top: 165px;
+    height: calc(100vh - 200px); 
+    overflow-y: scroll;
 }
 
 .photo-gallery {
@@ -403,6 +412,15 @@ h3 {
 .card:hover .ghost-player i{
     display: inline-block;
     opacity: 1;
+}
+
+.created-for {
+    display: flex;
+    flex-direction: column;   
+}
+
+.card-release {
+    display: flex;
 }
 
 
