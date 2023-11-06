@@ -293,7 +293,7 @@ nav ul li i {
    
 } */
 
-#upgrade {
+.upgrade {
     position: absolute;
     padding:10px;
     padding-left: 25px;
@@ -307,7 +307,6 @@ nav ul li i {
     top: 31.5px;
     right: 10px;
     float: right;
-
 }
 
 
@@ -349,7 +348,21 @@ nav ul li i {
     color: white;
 }
 
-.main-container:hover #upgrade {
+.home ul li:hover {
+    color: white;
+}
+
+.crea-playlist:hover {
+    color: white;
+}
+
+#playlist ul li:hover {
+    color: white;
+}
+
+/* Non funziona... */
+
+.upgrade:hover #up {
     color: rgb(153, 32, 32);
 }
 
