@@ -277,7 +277,7 @@ nav ul li i {
     height: 100px;
     background-color: rgba(0, 0, 0, 0.404);
     position: fixed;
-    z-index: 999;
+    z-index: 998;
     top:0;
     right: 0;
     display: flex;
@@ -295,6 +295,7 @@ nav ul li i {
 
 .upgrade {
     position: absolute;
+    z-index: 999;
     padding:10px;
     padding-left: 25px;
     padding-right: 25px;
@@ -360,10 +361,12 @@ nav ul li i {
     color: white;
 }
 
-/* Non funziona... */
+.upgrade:hover #up{
+    padding:15px;
+}
 
-.upgrade:hover #up {
-    color: rgb(153, 32, 32);
+.play-bar * :hover {
+    color: white;
 }
 
 /* Sezione centrale Gallery/photoGallery  */
